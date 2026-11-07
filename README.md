@@ -4,16 +4,20 @@ The Loonvale budget app for iPhone and Android, built with Expo (React Native).
 It uses the **same Supabase database** as the web app at firis.lovable.app
 (repo `gokusureshca/firis-family-finance`), so phone and web always show the same household.
 
-## What's in it (v0.1)
-- **Home:** left to spend this month, FIRE goal, budget by category, recent spending.
-- **Spending:** month by month with a 6-month chart, by date, by category or by merchant.
-- **Add / change expense:** amount, shop, category guess, who paid, date.
-  Scan a receipt (camera or photo); each line's tax can be switched No tax / HST 13% / GST 5%.
-- **Sign in** with a 6-digit email code, same email as the web app.
-- Not signed in: a sample family to look around.
+## What's in it
+Same Loonvale look as the web app on a phone: lake teal, Fraunces headings, Plus Jakarta Sans,
+and the tab bar Home · Budget · + · Spending · FIRE.
+- **Overview:** FIRE goal, left to spend, portfolio, budget by category, plans, recent spending.
+- **Budget:** each month's budget by group, and budget vs spend. Past months locked.
+- **Spending:** month chart with the budget line, money in vs spent, by category, merchant, person
+  or label; receipts open to show their lines.
+- **Add / edit expense:** big amount, shop chips, category guessed from the shop, type, more details.
+  **Scan** a receipt (camera or library) and review each line: name, qty, price, HST 13% / GST 5% / no tax.
+- **FIRE:** the goal result and your answers.
+- **Sign in** with a 6-digit email code, same email as the web app. Signed out shows a sample family.
 
-Not yet on the phone: setup, budget editing, money in, bank statement check, plans, FIRE questions.
-Those still work on the web.
+Still on the web only: setup, changing budgets and categories, adding money in, bank statement check,
+plans, answering the FIRE questions.
 
 ## Shared money rules
 `src/data/sample.ts` and `src/lib/{budget,format,fire,receipt,cloud,setup,plans,shops,statement}.ts`
