@@ -1,25 +1,41 @@
 {
   "expo": {
-    "name": "loonvale-app",
-    "slug": "loonvale-app",
+    "name": "Loonvale",
+    "slug": "loonvale",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.loonvale.app"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#FFF9F0",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.loonvale.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "scheme": "loonvale",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Loonvale uses the camera to scan your receipts.",
+          "photosPermission": "Loonvale reads receipt photos you pick."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
     }
   }
 }
